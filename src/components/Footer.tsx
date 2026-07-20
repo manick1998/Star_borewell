@@ -27,13 +27,11 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr]">
           <div>
             <Link to="/" className="flex items-center gap-2.5">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-accent-400 to-accent-600">
-                <svg viewBox="0 0 24 24" className="h-6 w-6 text-white" fill="none" stroke="currentColor" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 2v6" />
-                  <path d="M9 8h6l1.5 4h-9z" />
-                  <path d="M8 12h8l-1 9a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z" />
-                </svg>
-              </span>
+              <img
+                src="/images/logo.jpeg"
+                alt="Star Borewell logo"
+                className="h-11 w-11 rounded-xl object-cover ring-1 ring-white/20"
+              />
               <span className="text-lg font-extrabold tracking-tight">Star Borewell</span>
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">

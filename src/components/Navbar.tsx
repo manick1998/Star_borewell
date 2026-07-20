@@ -39,13 +39,11 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
         <Link to="/" className="flex items-center gap-2.5">
-          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-accent-400 to-accent-600 shadow-accent">
-            <svg viewBox="0 0 24 24" className="h-6 w-6 text-white" fill="none" stroke="currentColor" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 2v6" />
-              <path d="M9 8h6l1.5 4h-9z" />
-              <path d="M8 12h8l-1 9a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z" />
-            </svg>
-          </span>
+          <img
+            src="/images/logo.jpeg"
+            alt="Star Borewell logo"
+            className="h-11 w-11 rounded-xl object-cover shadow-md ring-1 ring-white/25"
+          />
           <span className="leading-tight">
             <span className="block text-lg font-extrabold tracking-tight text-white">Star Borewell</span>
             <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-accent-400">Drilling Experts</span>
