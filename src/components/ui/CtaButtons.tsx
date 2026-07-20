@@ -13,13 +13,13 @@ export function CallButton({ className }: { className?: string }) {
       )}
     >
       <Phone className="h-4.5 w-4.5 transition-transform group-hover:rotate-12" strokeWidth={2.4} />
-      Call Now
+      இப்போது அழைக்க
     </a>
   );
 }
 
-export function WhatsAppButton({ className, text = "WhatsApp Us" }: { className?: string; text?: string }) {
-  const message = encodeURIComponent("Hello Star Borewell, I would like to enquire about borewell drilling services.");
+export function WhatsAppButton({ className, text = "WhatsApp செய்ய" }: { className?: string; text?: string }) {
+  const message = encodeURIComponent("வணக்கம் ஸ்டார் போர்வெல், போர்வெல் துளையிடல் சேவைகள் பற்றி விசாரிக்க விரும்புகிறேன்.");
   return (
     <a
       href={`https://wa.me/${company.whatsappRaw}?text=${message}`}
@@ -41,11 +41,11 @@ export function QuoteButton({ className }: { className?: string }) {
     <Link
       to="/contact"
       className={cn(
-        "group inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold text-navy-900 shadow-premium transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy-50 active:translate-y-0",
+        "group inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold text-navy-900 shadow-premium transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy-50 active:translate-y-0 shine",
         className,
       )}
     >
-      Get Free Quote
+      இலவச மேற்கோள்
       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
     </Link>
   );

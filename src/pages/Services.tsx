@@ -10,16 +10,16 @@ import { cn } from "../utils/cn";
 
 export default function Services() {
   usePageMeta(
-    "Our Services | Borewell Drilling, Pump Installation & Repair — Star Borewell",
-    "Explore Star Borewell's complete range of services: borewell drilling, agricultural & residential borewells, industrial drilling, pump installation, pipeline laying, repair and maintenance.",
+    "எங்கள் சேவைகள் | போர்வெல் துளையிடல், பம்ப் பொருத்துதல் & பழுது — Star Borewell",
+    "Star Borewell-ன் முழு சேவைகளை ஆராயுங்கள்: போர்வெல் துளையிடல், விவசாய & குடியிருப்பு போர்வெல்கள், தொழில்துறை துளையிடல், பம்ப் பொருத்துதல், பைப்லைன், பழுது மற்றும் பராமரிப்பு.",
   );
 
   return (
     <>
       <PageHero
-        eyebrow="Our Services"
-        title="Complete Borewell Engineering Solutions"
-        description="From the first survey to final commissioning, we deliver every stage of borewell drilling, installation and maintenance with precision and care."
+        eyebrow="எங்கள் சேவைகள்"
+        title="முழுமையான போர்வெல் பொறியியல் தீர்வுகள்"
+        description="முதல் ஆய்வு முதல் இறுதி நிறுவல் வரை, துளையிடல், பொருத்துதல் மற்றும் பராமரிப்பின் ஒவ்வொரு கட்டத்தையும் துல்லியம் மற்றும் கவனத்துடன் வழங்குகிறோம்."
       />
 
       <section className="bg-white px-5 py-20 sm:px-8">
@@ -43,7 +43,7 @@ export default function Services() {
 
                 <div>
                   <span className="inline-flex items-center gap-2 rounded-full border border-navy-900/10 bg-navy-900/5 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-accent-600">
-                    Service {String(i + 1).padStart(2, "0")}
+                    சேவை {String(i + 1).padStart(2, "0")}
                   </span>
                   <h2 className="mt-4 text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">{s.title}</h2>
                   <p className="mt-4 text-sm leading-relaxed text-ink-500 sm:text-base">{s.description}</p>
@@ -65,7 +65,7 @@ export default function Services() {
                       to="/contact"
                       className="group inline-flex items-center gap-2 rounded-full border-2 border-navy-900 px-7 py-3.5 text-sm font-bold text-navy-900 transition-all hover:bg-navy-900 hover:text-white"
                     >
-                      Get Free Quote
+                      இலவச மேற்கோள்
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </div>
@@ -79,10 +79,9 @@ export default function Services() {
       <section className="relative overflow-hidden bg-navy-950 px-5 py-20 text-center sm:px-8">
         <div className="bg-grid absolute inset-0 opacity-30" />
         <div className="relative mx-auto max-w-2xl">
-          <h2 className="text-2xl font-extrabold text-white sm:text-3xl">Not Sure Which Service You Need?</h2>
+          <h2 className="text-2xl font-extrabold text-white sm:text-3xl">எந்த சேவை உங்களுக்கு தேவை என்று தெரியவில்லையா?</h2>
           <p className="mt-4 text-white/70">
-            Call our team for a free consultation — we'll recommend the right solution for your property, farm or
-            business.
+            இலவச ஆலோசனைக்கு எங்கள் குழுவை அழைக்கவும் — உங்கள் சொத்து, விவசாயம் அல்லது வணிகத்திற்கு சரியான தீர்வை பரிந்துரைப்போம்.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <CallButton />

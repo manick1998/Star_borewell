@@ -3,18 +3,18 @@ import { Send, CheckCircle2 } from "lucide-react";
 import { company } from "../data/site";
 
 const serviceOptions = [
-  "Borewell Drilling",
-  "Agricultural Borewell",
-  "Residential Borewell",
-  "Industrial Borewell",
-  "Compressor Cleaning",
-  "Motor Installation",
-  "Submersible Pump Installation",
-  "Pipeline Installation",
-  "Borewell Repair",
-  "Water Yield Testing",
-  "Maintenance",
-  "Other",
+  "போர்வெல் துளையிடல்",
+  "விவசாய போர்வெல்",
+  "குடியிருப்பு போர்வெல்",
+  "தொழில்துறை போர்வெல்",
+  "கம்ப்ரஸர் சுத்தம்",
+  "மோட்டார் பொருத்துதல்",
+  "சப்மெர்சிபிள் பம்ப் பொருத்துதல்",
+  "பைப்லைன் பொருத்துதல்",
+  "போர்வெல் பழுது",
+  "நீர் வரத்து சோதனை",
+  "வருடாந்திர பராமரிப்பு",
+  "பிற",
 ];
 
 export default function ContactForm() {
@@ -28,7 +28,7 @@ export default function ContactForm() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     const message = encodeURIComponent(
-      `Hello Star Borewell, I would like to enquire:\n\nName: ${form.name}\nPhone: ${form.phone}\nLocation: ${form.location}\nService: ${form.service}\nMessage: ${form.message}`,
+      `வணக்கம் ஸ்டார் போர்வெல், விசாரிக்க விரும்புகிறேன்:\n\nபெயர்: ${form.name}\nதொலைபேசி: ${form.phone}\nஇடம்: ${form.location}\nசேவை: ${form.service}\nசெய்தி: ${form.message}`,
     );
     window.open(`https://wa.me/${company.whatsappRaw}?text=${message}`, "_blank");
     setSubmitted(true);
@@ -38,9 +38,9 @@ export default function ContactForm() {
     return (
       <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-navy-900/10 bg-navy-50/60 p-12 text-center">
         <CheckCircle2 className="h-14 w-14 text-green-600" />
-        <h3 className="text-xl font-bold text-navy-900">Thank you, {form.name.split(" ")[0] || "there"}!</h3>
+        <h3 className="text-xl font-bold text-navy-900">நன்றி, {form.name.split(" ")[0] || "நண்பரே"}!</h3>
         <p className="max-w-sm text-sm text-ink-500">
-          Your enquiry has been sent via WhatsApp. Our team will get back to you shortly. You can also call us directly at{" "}
+          உங்கள் விசாரனை WhatsApp மூலம் அனுப்பப்பட்டது. எங்கள் குழு விரைவில் உங்களைத் தொடர்புகொள்ளும். நேரடியாகவும் அழைக்கலாம்:{" "}
           <a href={`tel:${company.phoneRaw}`} className="font-bold text-accent-600">
             {company.phoneDisplay}
           </a>
@@ -50,7 +50,7 @@ export default function ContactForm() {
           onClick={() => setSubmitted(false)}
           className="mt-2 rounded-full border border-navy-900/15 px-6 py-2.5 text-sm font-semibold text-navy-800 hover:border-accent-500 hover:text-accent-600"
         >
-          Submit Another Enquiry
+          மறுபடியும் விசாரிக்க
         </button>
       </div>
     );
@@ -60,25 +60,25 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="grid gap-5 rounded-2xl border border-navy-900/10 bg-white p-6 shadow-[0_2px_20px_rgba(10,23,48,0.06)] sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">Full Name *</label>
+          <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">முழு பெயர் *</label>
           <input
             required
             name="name"
             value={form.name}
             onChange={handleChange}
-            placeholder="Enter your full name"
+            placeholder="உங்கள் முழு பெயரை உள்ளிடவும்"
             className="w-full rounded-xl border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20"
           />
         </div>
         <div>
-          <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">Phone Number *</label>
+          <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">தொலைபேசி எண் *</label>
           <input
             required
             type="tel"
             name="phone"
             value={form.phone}
             onChange={handleChange}
-            placeholder="10-digit mobile number"
+            placeholder="10 இலக்க மொபைல் எண்"
             className="w-full rounded-xl border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20"
           />
         </div>
@@ -86,18 +86,18 @@ export default function ContactForm() {
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">Location / Village *</label>
+          <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">இடம் / கிராமம் *</label>
           <input
             required
             name="location"
             value={form.location}
             onChange={handleChange}
-            placeholder="e.g. Sivakasi, Virudhunagar..."
+            placeholder="உ.ம். சிவகாசி, விருதுநகர்..."
             className="w-full rounded-xl border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20"
           />
         </div>
         <div>
-          <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">Service Required *</label>
+          <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">தேவையான சேவை *</label>
           <select
             name="service"
             value={form.service}
@@ -114,13 +114,13 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">Your Requirement</label>
+        <label className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-ink-500">உங்கள் தேவை</label>
         <textarea
           name="message"
           value={form.message}
           onChange={handleChange}
           rows={5}
-          placeholder="Tell us briefly about your borewell requirement, plot size, or issue..."
+          placeholder="உங்கள் போர்வெல் தேவை, மனை அளவு, அல்லது பிரச்சினை பற்றி சுருக்கமாக சொல்லுங்கள்..."
           className="w-full resize-none rounded-xl border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20"
         />
       </div>
@@ -129,11 +129,11 @@ export default function ContactForm() {
         type="submit"
         className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent-500 px-8 py-4 text-sm font-bold text-white shadow-accent transition-all hover:-translate-y-0.5 hover:bg-accent-600"
       >
-        Send Enquiry via WhatsApp
+        WhatsApp மூலம் விசாரனை அனுப்பு
         <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" />
       </button>
       <p className="text-center text-xs text-ink-500">
-        By submitting, you'll be redirected to WhatsApp to confirm your enquiry with our team instantly.
+        சமர்ப்பிக்கும்போது, எங்கள் குழுவுடன் உடனடியாக விசாரனையை உறுதிப்படுத்த WhatsApp-க்கு திருப்பி அனுப்பப்படுவீர்கள்.
       </p>
     </form>
   );

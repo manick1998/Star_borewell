@@ -35,9 +35,7 @@ export default function Footer() {
               <span className="text-lg font-extrabold tracking-tight">Star Borewell</span>
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
-              Star Borewell is the trusted name for professional borewell drilling, pump installation and repair
-              services across Sivakasi, Virudhunagar and Kovilpatti — combining 20+ years of expertise with modern
-              engineering equipment.
+              ஸ்டார் போர்வெல் — சிவகாசி, விருதுநகர் மற்றும் கோவில்பட்டி முழுவதும் தொழில்முறை போர்வெல் துளையிடல், பம்ப் பொருத்துதல் மற்றும் பழுது சேவைகளுக்கான நம்பகமான பெயர். 20+ வருட அனுபவம் மற்றும் நவீன பொறியியல் உபகரணங்களுடன்.
             </p>
             <div className="mt-6 flex gap-3">
               {socialIcons.map((icon) => (
@@ -56,15 +54,15 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest text-accent-400">Quick Links</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-accent-400">விரைவு இணைப்புகள்</h4>
             <ul className="mt-5 space-y-3 text-sm text-white/70">
               {[
-                { to: "/about", label: "About Us" },
-                { to: "/services", label: "Our Services" },
-                { to: "/gallery", label: "Gallery" },
-                { to: "/testimonials", label: "Testimonials" },
-                { to: "/faq", label: "FAQ" },
-                { to: "/contact", label: "Contact" },
+                { to: "/about", label: "எங்களைப் பற்றி" },
+                { to: "/services", label: "எங்கள் சேவைகள்" },
+                { to: "/gallery", label: "படத்தொகுப்பு" },
+                { to: "/testimonials", label: "கருத்துகள்" },
+                { to: "/faq", label: "கேள்விகள்" },
+                { to: "/contact", label: "தொடர்பு" },
               ].map((l) => (
                 <li key={l.to}>
                   <Link to={l.to} className="transition-colors hover:text-accent-400">
@@ -76,7 +74,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest text-accent-400">Our Services</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-accent-400">எங்கள் சேவைகள்</h4>
             <ul className="mt-5 space-y-3 text-sm text-white/70">
               {services.slice(0, 6).map((s) => (
                 <li key={s.slug}>
@@ -89,7 +87,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest text-accent-400">Contact Us</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-accent-400">தொடர்பு</h4>
             <ul className="mt-5 space-y-4 text-sm text-white/70">
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 shrink-0 text-accent-400" />
@@ -120,8 +118,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row">
-          <p>© {year} Star Borewell. All rights reserved.</p>
-          <p>Serving {company.areasServed}</p>
+          <p>© {year} Star Borewell. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+          <p>{company.areasServed} பகுதிகளுக்கு சேவை செய்கிறோம்</p>
         </div>
       </div>
     </footer>

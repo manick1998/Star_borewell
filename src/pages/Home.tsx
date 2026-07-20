@@ -16,8 +16,8 @@ import { services, testimonials, company } from "../data/site";
 
 export default function Home() {
   usePageMeta(
-    "Star Borewell | Professional Borewell Drilling Services in Sivakasi, Virudhunagar & Kovilpatti",
-    "Star Borewell offers expert borewell drilling, pump installation & repair with modern equipment across Sivakasi, Virudhunagar & Kovilpatti. 20+ years experience, 5000+ borewells completed. Call 098433 46773.",
+    "Star Borewell | சிவகாசி, விருதுநகர் & கோவில்பட்டியில் தொழில்முறை போர்வெல் துளையிடல்",
+    "Star Borewell — நவீன உபகரணங்களுடன் சிவகாசி, விருதுநகர் & கோவில்பட்டியில் நிபுணத்துவ போர்வெல் துளையிடல், பம்ப் பொருத்துதல் & பழுது. 20+ வருட அனுபவம், 5000+ போர்வெல்கள். 098433 46773 ஐ அழைக்கவும்.",
   );
 
   return (
@@ -42,18 +42,17 @@ export default function Home() {
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-accent-400 backdrop-blur-md">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-500" />
-                Trusted Since 20+ Years
+                20+ வருடங்களாக நம்பகம்
               </span>
             </Reveal>
             <Reveal delay={120}>
               <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Professional <span className="text-gradient-accent">Borewell Drilling</span> Services
+                தொழில்முறை <span className="text-gradient-accent">போர்வெல் துளையிடல்</span> சேவைகள்
               </h1>
             </Reveal>
             <Reveal delay={220}>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-                Reliable borewell solutions with modern equipment and an experienced team — serving house owners,
-                farmers, builders and industries across <strong className="text-white">Sivakasi, Virudhunagar &amp; Kovilpatti</strong>.
+                நவீன உபகரணங்கள் மற்றும் அனுபவம் வாய்ந்த குழுவுடன் நம்பகமான போர்வெல் தீர்வுகள் — <strong className="text-white">சிவகாசி, விருதுநகர் &amp; கோவில்பட்டி</strong> முழுவதும் வீட்டு உரிமையாளர்கள், விவசாயிகள், கட்டிடக்காரர்கள் மற்றும் தொழில்களுக்கு சேவை செய்கிறோம்.
               </p>
             </Reveal>
             <Reveal delay={320}>
@@ -78,7 +77,7 @@ export default function Home() {
                       <Star key={i} className="h-4 w-4 fill-accent-500 text-accent-500" />
                     ))}
                   </div>
-                  4.9/5 from 218+ Google reviews
+                  218+ கூகுள் மதிப்புரைகளிலிருந்து 4.9/5
                 </div>
               </div>
             </Reveal>
@@ -100,9 +99,9 @@ export default function Home() {
       <section className="bg-white px-5 pb-24 pt-32 sm:px-8 sm:pt-40">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
-            eyebrow="Our Services"
-            title="Complete Borewell Solutions Under One Roof"
-            description="From drilling to pump installation, repair and maintenance — we deliver end-to-end borewell engineering services for every requirement."
+            eyebrow="எங்கள் சேவைகள்"
+            title="ஒரே கூரையின் கீழ் முழு போர்வெல் தீர்வுகள்"
+            description="துளையிடல் முதல் பம்ப் பொருத்துதல், பழுது மற்றும் பராமரிப்பு வரை — ஒவ்வொரு தேவைக்கும் இறுதி-இறுதி போர்வெல் பொறியியல் சேவைகளை வழங்குகிறோம்."
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.slice(0, 6).map((s, i) => (
@@ -115,7 +114,7 @@ export default function Home() {
                 to="/services"
                 className="group inline-flex items-center gap-2 rounded-full border-2 border-navy-900 px-8 py-3.5 text-sm font-bold text-navy-900 transition-all hover:bg-navy-900 hover:text-white"
               >
-                View All 11 Services
+                அனைத்து 11 சேவைகளையும் காண்க
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -128,9 +127,9 @@ export default function Home() {
         <div className="bg-grid absolute inset-0 opacity-30" />
         <div className="relative mx-auto max-w-7xl">
           <SectionHeading
-            eyebrow="Why Choose Us"
-            title="Engineering Excellence You Can Trust"
-            description="Two decades of hands-on drilling expertise, combined with modern machinery and honest service, make us the region's most trusted borewell partner."
+            eyebrow="ஏன் எங்களை தேர்வு செய்ய வேண்டும்"
+            title="நீங்கள் நம்பக்கூடிய பொறியியல் சிறப்பு"
+            description="இரண்டு தசாப்தங்களாக நேரடி துளையிடல் நிபுணத்துவம், நவீன இயந்திரங்கள் மற்றும் நேர்மையான சேவையுடன், இப்பகுதியின் மிகவும் நம்பகமான போர்வெல் கூட்டாளியாக இருக்கிறோம்."
             light
           />
           <div className="mt-14">
@@ -143,9 +142,9 @@ export default function Home() {
       <section className="bg-navy-50/40 px-5 py-24 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
-            eyebrow="Customer Love"
-            title="What Our Customers Say"
-            description="Real feedback from house owners, farmers, industries and institutions who trusted Star Borewell for their water needs."
+            eyebrow="வாடிக்கையாளர் அன்பு"
+            title="எங்கள் வாடிக்கையாளர்கள் என்ன சொல்கிறார்கள்"
+            description="தங்கள் நீர் தேவைகளுக்கு Star Borewell-ஐ நம்பிய வீட்டு உரிமையாளர்கள், விவசாயிகள், தொழில்கள் மற்றும் நிறுவனங்களின் உண்மையான கருத்துகள்."
           />
           <div className="mt-10">
             <GoogleReviews />
@@ -158,7 +157,7 @@ export default function Home() {
           <Reveal delay={150}>
             <div className="mt-10 text-center">
               <Link to="/testimonials" className="inline-flex items-center gap-2 text-sm font-bold text-navy-900 hover:text-accent-600">
-                Read More Testimonials <ArrowRight className="h-4 w-4" />
+                மேலும் கருத்துகள் படிக்க <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </Reveal>
@@ -169,9 +168,9 @@ export default function Home() {
       <section className="bg-white px-5 py-24 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
-            eyebrow="Our Work"
-            title="Recent Projects & Machinery"
-            description="A glimpse into our field operations — from residential drilling to large-scale industrial borewell installations."
+            eyebrow="எங்கள் வேலை"
+            title="சமீபத்திய திட்டங்கள் & இயந்திரங்கள்"
+            description="நமது கள செயல்பாடுகளின் ஒரு பார்வை — குடியிருப்பு துளையிடல் முதல் பெரிய அளவிலான தொழில்துறை போர்வெல் நிறுவல்கள் வரை."
           />
           <div className="mt-14">
             <GalleryGrid limit={8} />
@@ -182,7 +181,7 @@ export default function Home() {
                 to="/gallery"
                 className="group inline-flex items-center gap-2 rounded-full border-2 border-navy-900 px-8 py-3.5 text-sm font-bold text-navy-900 transition-all hover:bg-navy-900 hover:text-white"
               >
-                View Full Gallery
+                முழு படத்தொகுப்பை காண்க
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -194,9 +193,9 @@ export default function Home() {
       <section className="bg-navy-50/40 px-5 py-24 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
-            eyebrow="FAQ"
-            title="Frequently Asked Questions"
-            description="Quick answers to the most common questions about our borewell drilling services."
+            eyebrow="கேள்விகள்"
+            title="அடிக்கடி கேட்கப்படும் கேள்விகள்"
+            description="எங்கள் போர்வெல் துளையிடல் சேவைகள் பற்றிய பொதுவான கேள்விகளுக்கான விரைவு பதில்கள்."
           />
           <div className="mt-14">
             <FaqAccordion />
@@ -204,7 +203,7 @@ export default function Home() {
           <Reveal delay={150}>
             <div className="mt-10 text-center">
               <Link to="/faq" className="inline-flex items-center gap-2 text-sm font-bold text-navy-900 hover:text-accent-600">
-                View All 20 FAQs <ArrowRight className="h-4 w-4" />
+                அனைத்து 20 கேள்விகளையும் காண்க <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </Reveal>
@@ -217,18 +216,18 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
           <div>
             <SectionHeading
-              eyebrow="Get In Touch"
-              title="Request a Free Site Visit & Quotation"
-              description="Fill in your details below or reach us directly via call / WhatsApp. Our team responds within hours."
+              eyebrow="தொடர்பு கொள்ள"
+              title="இலவச தள வருகை & மேற்கோளுக்கு விண்ணப்பிக்கவும்"
+              description="கீழே உங்கள் விவரங்களை நிரப்புங்கள் அல்லது நேரடியாக அழைப்பு / WhatsApp மூலம் எங்களை தொடர்புகொள்ளுங்கள். சில மணிநேரங்களில் எங்கள் குழு பதிலளிக்கும்."
               align="left"
               light
             />
             <div className="mt-8 space-y-4">
               {[
-                "Free on-site inspection & consultation",
-                "Transparent, no-hidden-charge pricing",
-                "Same-day response for urgent enquiries",
-                `Serving ${company.areasServed}`,
+                "இலவச தள ஆய்வு & ஆலோசனை",
+                "வெளிப்படையான, மறைக்கப்படாத விலை",
+                "அவசர விசாரனைகளுக்கு அன்றே பதில்",
+                `${company.areasServed} பகுதிகளுக்கு சேவை`,
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 text-white/80">
                   <CheckCircle2 className="h-5 w-5 shrink-0 text-accent-400" />

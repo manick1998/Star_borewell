@@ -12,7 +12,7 @@ export default function FloatingActions() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const message = encodeURIComponent("Hello Star Borewell, I would like to enquire about borewell drilling services.");
+  const message = encodeURIComponent("வணக்கம் ஸ்டார் போர்வெல், போர்வெல் துளையிடல் சேவைகள் பற்றி விசாரிக்க விரும்புகிறேன்.");
 
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3.5">

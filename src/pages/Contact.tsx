@@ -8,7 +8,7 @@ import { company } from "../data/site";
 const infoCards = [
   {
     icon: Phone,
-    title: "Call Us",
+    title: "அழைக்க",
     lines: [company.phoneDisplay],
     href: `tel:${company.phoneRaw}`,
   },
@@ -20,34 +20,34 @@ const infoCards = [
   },
   {
     icon: Mail,
-    title: "Email",
+    title: "மின்னஞ்சல்",
     lines: [company.email],
     href: `mailto:${company.email}`,
   },
   {
     icon: MapPin,
-    title: "Address",
+    title: "முகவரி",
     lines: [company.address],
   },
   {
     icon: Clock,
-    title: "Business Hours",
+    title: "வேலை நேரம்",
     lines: [company.hoursWeekday, company.hoursSunday],
   },
 ];
 
 export default function Contact() {
   usePageMeta(
-    "Contact Star Borewell | Call 098433 46773 for Borewell Drilling in Sivakasi",
-    "Contact Star Borewell for a free site inspection and quotation. Call, WhatsApp or fill our enquiry form. Serving Sivakasi, Virudhunagar and Kovilpatti with 24/7 emergency support.",
+    "Star Borewell ஐ தொடர்பு கொள்ள | சிவகாசியில் போர்வெல் துளையிடலுக்கு 098433 46773",
+    "இலவச தள ஆய்வு மற்றும் மேற்கோளுக்கு Star Borewell-ஐ தொடர்பு கொள்ளுங்கள். அழைப்பு, WhatsApp அல்லது விசாரனை படிவம். சிவகாசி, விருதுநகர், கோவில்பட்டியில் 24/7 அவசர ஆதரவு.",
   );
 
   return (
     <>
       <PageHero
-        eyebrow="Contact Us"
-        title="Let's Solve Your Water Problem Today"
-        description="Reach out for a free site inspection, quotation or emergency borewell repair. Our team responds fast."
+        eyebrow="தொடர்பு"
+        title="இன்றே உங்கள் நீர் பிரச்சினையை தீர்ப்போம்"
+        description="இலவச தள ஆய்வு, மேற்கோள் அல்லது அவசர போர்வெல் பழுதுக்கு எங்களை தொடர்பு கொள்ளுங்கள். எங்கள் குழு விரைவாக பதிலளிக்கும்."
       />
 
       <section className="bg-white px-5 py-20 sm:px-8">
@@ -80,7 +80,7 @@ export default function Contact() {
 
           <Reveal delay={100}>
             <div>
-              <h2 className="mb-6 text-2xl font-extrabold text-navy-900">Send Us Your Enquiry</h2>
+              <h2 className="mb-6 text-2xl font-extrabold text-navy-900">உங்கள் விசாரனையை அனுப்புங்கள்</h2>
               <ContactForm />
             </div>
           </Reveal>

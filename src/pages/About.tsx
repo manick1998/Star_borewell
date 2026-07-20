@@ -6,31 +6,31 @@ import Reveal from "../components/ui/Reveal";
 import { CallButton, WhatsAppButton } from "../components/ui/CtaButtons";
 
 const values = [
-  { icon: ShieldCheck, title: "Integrity", text: "Transparent pricing and honest recommendations — no unnecessary drilling, no hidden fees." },
-  { icon: Award, title: "Excellence", text: "Precision engineering at every step, from site survey to final yield testing." },
-  { icon: HeartHandshake, title: "Customer First", text: "We treat every home, farm and industry with the same level of care and urgency." },
-  { icon: Users, title: "Teamwork", text: "A disciplined, safety-trained crew working in coordination for flawless execution." },
+  { icon: ShieldCheck, title: "நேர்மை", text: "வெளிப்படையான விலை மற்றும் நேர்மையான பரிந்துரைகள் — தேவையில்லாத துளையிடல் இல்லை, மறைக்கப்பட்ட கட்டணம் இல்லை." },
+  { icon: Award, title: "சிறப்பு", text: "தள ஆய்வு முதல் இறுதி வரத்து சோதனை வரை ஒவ்வொரு கட்டத்திலும் துல்லியமான பொறியியல்." },
+  { icon: HeartHandshake, title: "வாடிக்கையாளர் முதல்", text: "ஒவ்வொரு வீடு, விவசாயம் மற்றும் தொழிலையும் ஒரே கவனத்துடனும் அவசரத்துடனும் கையாள்கிறோம்." },
+  { icon: Users, title: "குழுப்பணி", text: "சிறப்பான செயல்பாட்டிற்காக ஒருங்கிணைந்து பணியும், பாதுகாப்பு பயிற்சி பெற்ற ஒழுக்கமான குழு." },
 ];
 
 const team = [
-  { name: "R. Muthusamy", role: "Founder & Chief Drilling Engineer" },
-  { name: "K. Sivakumar", role: "Site Operations Manager" },
-  { name: "P. Ganesan", role: "Senior Rig Operator" },
-  { name: "S. Vijay", role: "Pump & Motor Specialist" },
+  { name: "ஆர். முத்துசாமி", role: "நிறுவனர் & தலைமை துளையிடல் பொறியாளர்" },
+  { name: "கே. சிவகுமார்", role: "தள செயல்பாடுகள் மேலாளர்" },
+  { name: "பி. கணேசன்", role: "மூத்த ரிக் இயக்குநர்" },
+  { name: "எஸ். விஜய்", role: "பம்ப் & மோட்டார் நிபுணர்" },
 ];
 
 export default function About() {
   usePageMeta(
-    "About Star Borewell | 20+ Years of Trusted Borewell Drilling Expertise",
-    "Learn about Star Borewell's journey, mission, vision and the experienced team behind 5000+ successful borewell projects across Sivakasi, Virudhunagar and Kovilpatti.",
+    "Star Borewell பற்றி | 20+ வருட நம்பகமான போர்வெல் துளையிடல் நிபுணத்துவம்",
+    "ஸ்டார் போர்வெல்லின் பயணம், பணி, குறிக்கோள் மற்றும் சிவகாசி, விருதுநகர், கோவில்பட்டி முழுவதும் 5000+ வெற்றிகரமான போர்வெல் திட்டங்களுக்குப் பின்னால் உள்ள அனுபவம் வாய்ந்த குழுவை அறியவும்.",
   );
 
   return (
     <>
       <PageHero
-        eyebrow="About Star Borewell"
-        title="Two Decades of Digging Deeper for Your Water Needs"
-        description="From a single drilling rig to a full-scale borewell engineering company — our story is built on trust, precision and relentless customer commitment."
+        eyebrow="Star Borewell பற்றி"
+        title="உங்கள் நீர் தேவைக்காக இரண்டு தசாப்தங்களாக ஆழமாக துளையிடுகிறோம்"
+        description="ஒரு துளையிடல் ரிக் முதல் முழு அளவிலான போர்வெல் பொறியியல் நிறுவனம் வரை — நமது கதை நம்பிக்கை, துல்லியம் மற்றும் தொடர்ச்சியான வாடிக்கையாளர் கவனிப்பின் மீது கட்டப்பட்டது."
       />
 
       {/* Story */}
@@ -41,27 +41,27 @@ export default function About() {
               <img src="/images/about-team.jpg" alt="Star Borewell expert field team" className="w-full rounded-2xl object-cover shadow-premium" loading="lazy" />
               <div className="absolute -bottom-6 -right-6 hidden rounded-2xl bg-accent-500 px-8 py-5 text-white shadow-accent sm:block">
                 <p className="text-3xl font-extrabold">20+</p>
-                <p className="text-xs font-semibold uppercase tracking-wider">Years in Business</p>
+                <p className="text-xs font-semibold uppercase tracking-wider">வருடங்கள்</p>
               </div>
             </div>
           </Reveal>
           <div>
-            <SectionHeading eyebrow="Our Story" title="Built on Hard Work, Trust & Modern Engineering" align="left" />
+            <SectionHeading eyebrow="நமது கதை" title="கடின உழைப்பு, நம்பிக்கை & நவீன பொறியியல்" align="left" />
             <div className="mt-6 space-y-4 text-sm leading-relaxed text-ink-500 sm:text-base">
               <p>
-                Star Borewell began over two decades ago in Sivakasi with a single drilling rig and a simple promise —
-                deliver reliable water solutions with honesty and precision. What started as a small family-run
-                drilling service has grown into one of the most trusted borewell companies serving Sivakasi,
-                Virudhunagar and Kovilpatti.
+                ஸ்டார் போர்வெல் இரண்டு தசாப்தங்களுக்கு முன்பு சிவகாசியில் ஒரு துளையிடல் ரிக் மற்றும் ஒரு எளிய வாக்குறுதியுடன் தொடங்கியது —
+                நேர்மை மற்றும் துல்லியத்துடன் நம்பகமான நீர் தீர்வுகளை வழங்குவது. ஒரு சிறிய குடும்பம் நடத்தும் துளையிடல் சேவையாக
+                தொடங்கியது, இன்று சிவகாசி, விருதுநகர் மற்றும் கோவில்பட்டிக்கு சேவை செய்யும் மிகவும் நம்பகமான போர்வெல் நிறுவனங்களில்
+                ஒன்றாக வளர்ந்துள்ளது.
               </p>
               <p>
-                Today, we operate a fleet of modern DTH rotary drilling rigs, high-pressure compressors and pump
-                installation equipment, backed by a team of experienced engineers and technicians. We've completed
-                over 5,000 borewell projects for house owners, farmers, builders, industries, schools and hospitals —
-                each one handled with the same dedication as our very first project.
+                இன்று, நவீன DTH ரோட்டரி துளையிடல் ரிக்குகள், அதிக அழுத்த கம்ப்ரஸர்கள் மற்றும் பம்ப் பொருத்துதல் உபகரணங்களின் தொகுப்பை
+                இயக்குகிறோம், அனுபவம் வாய்ந்த பொறியாளர்கள் மற்றும் தொழில்நுட்ப வல்லுநர்களின் குழுவுடன். வீட்டு உரிமையாளர்கள், விவசாயிகள்,
+                கட்டிடக்காரர்கள், தொழில்கள், பள்ளிகள் மற்றும் மருத்துவமனைகளுக்கு 5,000-க்கும் மேற்பட்ட போர்வெல் திட்டங்களை முடித்துள்ளோம் —
+                ஒவ்வொன்றும் நமது முதல் திட்டத்தைப் போலவே அர்ப்பணிப்புடன் கையாளப்பட்டது.
               </p>
               <p>
-                Our growth has always been guided by one principle: <strong className="text-navy-900">customer trust is earned through consistent, quality work</strong> — not shortcuts.
+                நமது வளர்ச்சி எப்போதும் ஒரு கொள்கையால் வழிநடத்தப்பட்டது: <strong className="text-navy-900">வாடிக்கையாளர் நம்பிக்கை தொடர்ச்சியான, தரமான வேலை மூலம் மட்டுமே சம்பாதிக்கப்படுகிறது</strong> — குறுக்குவழிகள் அல்ல.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -80,10 +80,10 @@ export default function About() {
               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-navy-900 text-accent-400">
                 <Target className="h-7 w-7" />
               </div>
-              <h3 className="mt-5 text-xl font-bold text-navy-900">Our Mission</h3>
+              <h3 className="mt-5 text-xl font-bold text-navy-900">நமது பணி</h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-500">
-                To provide every household, farm and industry in our region with dependable access to groundwater
-                through modern drilling technology, expert craftsmanship and honest, transparent service.
+                நவீன துளையிடல் தொழில்நுட்பம், நிபுணத்துவ கைவினைத்திறன் மற்றும் நேர்மையான, வெளிப்படையான சேவை மூலம் நமது பகுதியில் உள்ள
+                ஒவ்வொரு குடும்பம், விவசாயம் மற்றும் தொழிலுக்கும் நிலத்தடி நீருக்கான நம்பகமான அணுகலை வழங்குவது.
               </p>
             </div>
           </Reveal>
@@ -92,10 +92,10 @@ export default function About() {
               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-navy-900 text-accent-400">
                 <Eye className="h-7 w-7" />
               </div>
-              <h3 className="mt-5 text-xl font-bold text-navy-900">Our Vision</h3>
+              <h3 className="mt-5 text-xl font-bold text-navy-900">நமது குறிக்கோள்</h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-500">
-                To be recognized as Tamil Nadu's most trusted borewell engineering brand — known for premium
-                machinery, skilled manpower and an unwavering commitment to customer satisfaction.
+                தமிழ்நாட்டின் மிகவும் நம்பகமான போர்வெல் பொறியியல் பிராண்டாக அங்கீகரிக்கப்படுவது — சிறந்த இயந்திரங்கள், திறமையான
+                மனித வளம் மற்றும் வாடிக்கையாளர் திருப்திக்கான அசையாத அர்ப்பணிப்புக்காக அறியப்படுவது.
               </p>
             </div>
           </Reveal>
@@ -105,7 +105,7 @@ export default function About() {
       {/* Core Values */}
       <section className="bg-white px-5 py-24 sm:px-8">
         <div className="mx-auto max-w-7xl">
-          <SectionHeading eyebrow="Core Values" title="What Drives Us Every Day" />
+          <SectionHeading eyebrow="மைய மதிப்புகள்" title="எங்களை ஒவ்வொரு நாளும் இயக்குவது" />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v, i) => (
               <Reveal key={v.title} delay={i * 80}>
@@ -125,7 +125,7 @@ export default function About() {
       {/* Team */}
       <section className="bg-navy-50/40 px-5 py-24 sm:px-8">
         <div className="mx-auto max-w-7xl">
-          <SectionHeading eyebrow="Our Team" title="Meet the Experts Behind Every Borewell" description="A skilled, safety-trained crew committed to precision drilling and dependable service." />
+          <SectionHeading eyebrow="நமது குழு" title="ஒவ்வொரு போர்வெல்லுக்கும் பின்னால் உள்ள நிபுணர்களை சந்திக்கவும்" description="துல்லியமான துளையிடல் மற்றும் நம்பகமான சேவைக்கு அர்ப்பணிக்கப்பட்ட, பாதுகாப்பு பயிற்சி பெற்ற திறமையான குழு." />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((member, i) => (
               <Reveal key={member.name} delay={i * 80}>
@@ -145,9 +145,9 @@ export default function About() {
       {/* Trust bar */}
       <section className="bg-navy-950 px-5 py-20 text-center sm:px-8">
         <SectionHeading
-          eyebrow="Why Customers Trust Us"
-          title="Consistency, Transparency & Results — Every Single Time"
-          description="20+ years of experience, 5000+ completed borewells, modern machinery and a 24/7 responsive team make us the preferred choice across the region."
+          eyebrow="வாடிக்கையாளர்கள் ஏன் எங்களை நம்புகிறார்கள்"
+          title="சீரான தன்மை, வெளிப்படைத்தன்மை & முடிவுகள் — ஒவ்வொரு முறையும்"
+          description="20+ வருட அனுபவம், 5000+ முடிக்கப்பட்ட போர்வெல்கள், நவீன இயந்திரங்கள் மற்றும் 24/7 பதிலளிக்கும் குழு ஆகியவற்றுடன், பகுதி முழுவதும் விருப்பத்தேர்வாக இருக்கிறோம்."
           light
         />
         <Reveal delay={150}>

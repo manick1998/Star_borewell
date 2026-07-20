@@ -15,7 +15,7 @@ export default function GoogleReviews() {
           <path fill="#1976D2" d="M43.6 20.5H42V20.4H24v7.2h11.3c-.8 2.2-2.2 4.1-4.1 5.4l6.6 5.4c-.5.4 6.7-4.9 6.7-14.4 0-1.2-.1-2.4-.3-3.5z" />
         </svg>
         <div>
-          <p className="text-sm font-bold uppercase tracking-widest text-ink-500">Google Rating</p>
+          <p className="text-sm font-bold uppercase tracking-widest text-ink-500">கூகுள் மதிப்பீடு</p>
           <div className="mt-1 flex items-center justify-center gap-2 sm:justify-start">
             <span className="text-3xl font-extrabold text-navy-900">4.9</span>
             <div className="flex gap-0.5">
@@ -24,7 +24,7 @@ export default function GoogleReviews() {
               ))}
             </div>
           </div>
-          <p className="mt-1 text-sm text-ink-500">Based on 218+ verified Google reviews</p>
+          <p className="mt-1 text-sm text-ink-500">218+ சரிபார்க்கப்பட்ட கூகுள் மதிப்புரைகளின் அடிப்படையில்</p>
         </div>
       </div>
     </Reveal>

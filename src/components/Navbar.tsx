@@ -5,13 +5,13 @@ import { company } from "../data/site";
 import { cn } from "../utils/cn";
 
 const links = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/services", label: "Services" },
-  { to: "/gallery", label: "Gallery" },
-  { to: "/testimonials", label: "Testimonials" },
-  { to: "/faq", label: "FAQ" },
-  { to: "/contact", label: "Contact" },
+  { to: "/", label: "முகப்பு" },
+  { to: "/about", label: "எங்களைப் பற்றி" },
+  { to: "/services", label: "சேவைகள்" },
+  { to: "/gallery", label: "படத்தொகுப்பு" },
+  { to: "/testimonials", label: "கருத்துகள்" },
+  { to: "/faq", label: "கேள்விகள்" },
+  { to: "/contact", label: "தொடர்பு" },
 ];
 
 export default function Navbar() {
@@ -46,7 +46,7 @@ export default function Navbar() {
           />
           <span className="leading-tight">
             <span className="block text-lg font-extrabold tracking-tight text-white">Star Borewell</span>
-            <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-accent-400">Drilling Experts</span>
+            <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-accent-400">துளையிடல் நிபுணர்கள்</span>
           </span>
         </Link>
 
@@ -115,7 +115,7 @@ export default function Navbar() {
             className="mt-2 flex items-center justify-center gap-2 rounded-full bg-accent-500 px-5 py-3 text-sm font-bold text-white shadow-accent"
           >
             <Phone className="h-4 w-4" />
-            Call {company.phoneDisplay}
+            அழைக்க {company.phoneDisplay}
           </a>
         </nav>
       </div>

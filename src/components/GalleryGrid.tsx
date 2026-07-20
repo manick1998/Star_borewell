@@ -4,13 +4,13 @@ import { gallery, type GalleryItem } from "../data/site";
 import Reveal from "./ui/Reveal";
 import { cn } from "../utils/cn";
 
-const categories = ["All", "Projects", "Machinery", "Completed"] as const;
+const categories = ["அனைத்தும்", "திட்டங்கள்", "இயந்திரங்கள்", "முடிக்கப்பட்டவை"] as const;
 
 export default function GalleryGrid({ limit }: { limit?: number }) {
-  const [filter, setFilter] = useState<(typeof categories)[number]>("All");
+  const [filter, setFilter] = useState<(typeof categories)[number]>(categories[0]);
   const [active, setActive] = useState<GalleryItem | null>(null);
 
-  const items = (filter === "All" ? gallery : gallery.filter((g) => g.category === filter)).slice(0, limit);
+  const items = (filter === categories[0] ? gallery : gallery.filter((g) => g.category === filter)).slice(0, limit);
 
   return (
     <div>
