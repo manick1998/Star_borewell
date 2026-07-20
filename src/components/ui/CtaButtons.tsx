@@ -8,7 +8,7 @@ export function CallButton({ className }: { className?: string }) {
     <a
       href={`tel:${company.phoneRaw}`}
       className={cn(
-        "group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-7 py-3.5 text-sm font-bold text-white shadow-accent transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent-600 hover:shadow-lg active:translate-y-0",
+        "group inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-br from-accent-400 to-accent-600 px-7 py-3.5 text-sm font-bold text-white shadow-accent transition-all duration-300 hover:-translate-y-0.5 hover:from-accent-500 hover:to-accent-700 hover:shadow-glow active:translate-y-0 shine",
         className,
       )}
     >

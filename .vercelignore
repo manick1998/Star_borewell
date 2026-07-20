@@ -1,0 +1,6 @@
+# Exclude local dev/preview artifacts from Vercel uploads
+mobile-shots
+shot.cjs
+logo-preview.html
+mobile-showcase.html
+.git

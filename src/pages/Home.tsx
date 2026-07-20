@@ -33,6 +33,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/50" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/40" />
 
+        {/* Ambient glow orbs */}
+        <div className="orb -left-24 top-16 h-72 w-72 bg-accent-500/25 animate-float-slow" />
+        <div className="orb right-0 top-1/4 h-96 w-96 bg-navy-500/25 animate-float" />
+
         <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-24 sm:px-8">
           <div className="max-w-2xl">
             <Reveal>
